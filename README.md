@@ -7,7 +7,7 @@ fluentd plugin for [MeCab](http://mecab.googlecode.com).
 
 Add this line to your application's Gemfile:
 
-    gem 'fluent-plugin-mecab', git: 'git://github.comm/katsyoshi/fluent-plugin-mecab.git'
+    gem 'fluent-plugin-mecab', git: 'git://github.com/katsyoshi/fluent-plugin-mecab.git'
 
 And then execute:
 
@@ -28,6 +28,10 @@ Configuration file:
       tag mecab.parse # defaul: mecab
     </match>
 
+## TODO
+
+1. impliments another mecab parse type, for example: wakati, chasen, and so on.
+1. gem
 
 ## Contributing
 
