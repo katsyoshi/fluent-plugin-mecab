@@ -26,7 +26,9 @@ class MeCabOutput < Output
 
   def emit(tag, es, chain)
     es.each do |time, record|
-      Engine.emit(@tag, time, parse(record))
+      parse(record).each do |mecab|
+        Engine.emit(@tag, time, mecab)
+      end
     end
   end
 
