@@ -1,12 +1,13 @@
-# Fluent::Plugin::Mecab
+# Fluent::Plugin::MeCab, a plugin for [Fluentd](http://fluentd.org)
 
-TODO: Write a gem description
+fluentd plugin for [MeCab](http://mecab.googlecode.com).
+
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'fluent-plugin-mecab'
+    gem 'fluent-plugin-mecab', git: 'git://github.comm/katsyoshi/fluent-plugin-mecab.git'
 
 And then execute:
 
@@ -18,7 +19,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Configuration file:
+
+    <match japanese.string>
+      type mecab
+      parse_type default # default: default
+      keys text
+      tag mecab.parse # defaul: mecab
+    </match>
+
 
 ## Contributing
 
