@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "fluent-plugin-mecab"
   spec.version       = Fluent::Plugin::Mecab::VERSION
   spec.authors       = ["MATSUMOTO Katsuyoshi"]
-  spec.email         = ["matsumoto.katsuyoshi+github@gmail.com"]
+  spec.email         = ["github@katsyoshi.org"]
   spec.summary       = %q{fluentd plugin for MeCab}
   spec.description   = %q{fluentd plugin for MeCab}
   spec.homepage      = "http://github.com/katsyoshi/fluent-plugin-mecab"
